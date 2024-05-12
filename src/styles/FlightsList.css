@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse; /* Removes default table spacing */
+    width: 100%; /* Makes the table fit the container */
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd; /* Adds borders to table cells */
+    padding: 8px; /* Adds padding to table cells */
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    font-weight: bold; /* Bold text for headers */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row colors */
+  }
+  

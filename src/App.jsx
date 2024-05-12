@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import FlightList from "./components/FlightsList"
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
       <h1>This is Travel agency code</h1>
+
+    <FlightList />
     </>
   )
 }
