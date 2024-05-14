@@ -4,7 +4,7 @@ Popular Travels is a web application designed to provide information about popul
 
 ## Site Link
 
-The live version of Popular Travels can be accessed [here](https://populartravel12345.netlify.app/).
+The live version of Popular Travels can be accessed here [Click](https://populartravel12345.netlify.app/).
 
 ## Prerequisites
 
@@ -58,8 +58,3 @@ npm run dev
 4.  Search any Date wise
 5.  Extra Options Filter Based on Environment
 6.  Data show in Table where( Flight,Aircraft,class, Fare, Route, Departure,Arrival,Duration,Price) is the column.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
