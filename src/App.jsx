@@ -1,11 +1,13 @@
+import FilterSearch from "./components/FilterSearch"
 import FlightList from "./components/FlightsList"
+import Navbar from "./components/Navbar"
 
 function App() {
   
   return (
     <>
-      <h1>This is Travel agency code</h1>
-
+    <Navbar />
+    <FilterSearch />
     <FlightList />
     </>
   )

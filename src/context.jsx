@@ -8,7 +8,6 @@ const AppProvider = ({children}) => {
     const [loading,setLoading] = useState(true)
     const [traveldata, setTravelData] = useState()
 
-
 const fetchData = ()=>{
     const flightDetails = [];
     
@@ -43,13 +42,42 @@ data.forEach((items)=>{
     setTravelData(flightDetails)
    
 }
+const searchBYDate = (date) =>{
+    console.log('i am context date',date)
+    const filteredData = traveldata.filter((flight)=>{
+         return flight.segments.some(segment=>{
+            return segment.departureTime.startsWith(date);
+         })
+    })
+    console.log('i am cotext filter',filteredData)
+    setTravelData(filteredData)
+}
+
+
+const searchByRoute = (dep,arr) =>{
+    console.log('i am context route',dep,'-->',arr)
+    const filteredData = traveldata.filter((flight)=>{
+
+        return flight.segments.some(segment=>{
+            return  segment.departure === dep && segment.arrival === arr
+        });
+       // return flight.segments.some(segment=> segment.departure === depature || segment.arrival === depature);
+    })
+    console.log('i am filter route data',filteredData)
+     setTravelData(filteredData)
+}
 
     useEffect(()=>{
         fetchData()
     },[])
 
+
+// useEffect(()=>{
+//     searchByRoute()
+// },[])
+
 return (
-    <AppContext.Provider value={{loading,traveldata}} >
+    <AppContext.Provider value={{loading,traveldata,searchBYDate,searchByRoute}} >
         {children}
     </AppContext.Provider>
 )

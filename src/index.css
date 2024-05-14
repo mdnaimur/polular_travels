@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS for the toggle buttons */
+.toggle-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  background-color: #f7fafc;
+  color: #4a5568;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  font-size: 0.75rem; /* Adjust font size */
+  /* height: 25px; */
+}
+
+.toggle-button:focus,
+.toggle-button:hover {
+  background-color: #edf2f7;
+  border-color: #cbd5e0;
+  outline: none;
+}
+
+.toggle-button.active {
+  background-color: #3730a3;
+  color: #fff;
+}
+
+.hr {
+  height: 2px;
+}
